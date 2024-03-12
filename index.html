@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Walmart</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <!-- font awasome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/brands.min.css" integrity="sha512-8RxmFOVaKQe/xtg6lbscU9DU0IRhURWEuiI0tXevv+lXbAHfkpamD4VKFQRto9WgfOJDwOZ74c/s9Yesv3VvIQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        .search i{
+            margin: 14px -25px;
+            /* border: 2px solid #ddd;
+            height: 25px;
+            width: 29px;
+            background-color: #bbb;
+            border-radius: 80%; */  
+        }
+        
+       input:focus{
+        outline: none;
+       }
+        
+        
+    </style>
+</head>
+<body>
+   <div class="container-fluid">
+    <nav class="navbar navbar-expand-lg bg-primary">
+        <div class="container-fluid">
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+            <div class="col-4">
+               <div class="d-flex mt-1 gap-2">
+                <div class="d-flex gap-2" style="margin-left: 35px;">
+                    <p class="mt-3 text-white" style="font-size: 18px;font-weight: bold;">Walmart </p>
+                    <img  style="width: 35px;" src="./walmart.svg" alt="">
+                </div>
+                <div class="d-flex mt-3">
+                    <i class="fa-solid fa-grip text-white mt-1" style="font-size: 21px;"></i>
+                    <p class="ms-2 fw-bold text-white" style="font-size: 16px;margin-top: 3px;">Departments</p>
+                </div>
+                <div class="d-flex mt-3">
+                    <i class="fa-solid fa-grip text-white mt-1" style="font-size: 21px;"></i>
+                    <p class="ms-2 fw-bold text-white" style="font-size: 16px;margin-top: 3px;">Services</p>
+                </div>
+               </div>
+            <div class="navbar-nav me-auto mb-2 mb-lg-0">
+               </div>
+              </div>
+              <div class="col-5 d-flex">
+                <input style="width: 700px; height: 40px; border-radius: 32px; border: none;" type="text" name="text" placeholder="Search everything at Walmart online and in store">
+                <div class="search ">
+                    <i class="fa-solid fa-magnifying-glass text-dark"></i>
+                </div>
+              </div>
+            <div class="col-3">
+               <div class="d-flex gap-3 mt-2 ms-5">
+                <div class="d-flex mt-2 gap-2 ">
+                    <i class="fa-regular fa-heart mt-2 text-white " style="font-size: 16px;"></i>
+                    <div style="line-height: 0.4;">
+                         <p class="text-white" style="font-size: 11px;">Recoder</p>
+                         <p class="text-white fw-semibold">My Items</p>
+                    </div>
+                </div>
+                <div class="d-flex mt-2 gap-2 ">
+                    <i class="fa-solid fa-user mt-2 text-white " style="font-size: 16px;"></i>
+                    <div style="line-height: 0.4;">
+                         <p class="text-white" style="font-size: 11px;">Sign In</p>
+                         <p class="text-white fw-semibold">Account</p>
+                    </div>
+                </div>
+                <div style="line-height: 1.1;" class="mt-2">
+                    <i class="fa-solid fa-cart-plus text-white" style="font-size: 16px;"></i>
+                    <p style="font-size: 11px; color: #FFFFFF;">$358.00</p>
+                </div>
+               </div>
+            </div>
+          </div>
+        </div>
+    
+      </nav>
+   </div> 
+   <!-- Cart -->
+   <div class="w-" style="width: 1300px;">
+    <div class="row ">
+        <div class="col-md-8  ">
+           <div class="mt-4" style="margin-left: 155px; ">
+            <p  style="font-size: 19px; font-weight: 700;">Cart <span style="font-size: 15px;font-weight: 400;">(1 item)</span></p>
+          
+            <div class="d-flex gap-2">
+                <img src="./pick.svg" alt="">
+                <p class="mt-3" style="">Pickup and delivery options</p>
+            </div>
+            <div class="d-flex gap-2">
+                    <div style="border: 2px solid #000000; width: 300px; height: 110px;line-height: 0.8; border-radius: 5px;" class="gap-2">
+                       <div style="margin-left: 85px; margin-top: 15px;" class="">
+                        <img style="width: 35px;" class="ms-2 " src="./shipping.svg" alt="">
+                       <div style="line-height: 0.3;" class="mt-2">
+                        <p style="font-size: 15px; font-weight: 500;" class="">Shipping</p>
+                       <p style="font-size: 12px; color: #666666;" class="ms-1">available</p>
+                       </div>
+                       </div>
+                    </div>
+                    <div style="border: 1px solid #666666; width: 300px; height: 110px;line-height: 0.8; border-radius: 5px;" class="gap-2">
+                        <div style="margin-left: 85px; margin-top: 15px;">
+                         <img style="width: 35px;" class="ms-2 " src="./pickup.svg" alt="">
+                        <div style="line-height: 0.3;" class="mt-2 ms-2">
+                         <p style="font-size: 14px; font-weight: 500; color: #666666;" class="">Pickup</p>
+                        <p style="font-size: 12px; color: #666666;" class="">available</p>
+                        </div>
+                        </div>
+                     </div>
+                    <div style="border: 1px solid #666666; width: 300px; height: 110px;line-height: 0.8; border-radius: 5px;" class="gap-2">
+                        <div style="margin-left: 85px; margin-top: 15px;">
+                         <img style="width: 35px;" class="ms-2 " src="./delevary.svg" alt="">
+                        <div style="line-height: 0.3;" class="mt-2">
+                         <p style="font-size: 15px; font-weight: 400; color: #666666;" class="">Delevary</p>
+                        <p style="font-size: 12px; color: #666666;" class="ms-1">available</p>
+                        </div>
+                        </div>
+                     </div>
+            </div>
+            <br>
+            <div style="box-shadow:0px 0px 2px #000000; width: 700PX; height: 140PX;border-radius: 12PX; background-color: #F2F8FD;">
+                <div class="d-flex mt-2 ms-3">
+                    <img class="mt-4 ms-2" src="./shipping.svg" alt="">
+                    <div class="ms-3 mt-4" style="line-height: 1.2;">
+                        <p style="font-size: 18px; color: #000000; font-weight: bold;">Free shipping, arrivestomorrow, Mar 12</p>
+                         <a class="text-dark" href="">95829</a>
+                    </div>
+                </div>
+             </div>
+            <div style="box-shadow:0px 0px 1px #000000; width: 700PX; height: 510PX;border-radius: 12PX; background-color: #FFFFFF;">
+                <div style="padding-top: 35px; padding-left: 15px;"> 
+                 <p style=" border: 1px solid #0071DC; width: 150px; height: 30px; border-radius: 6px;font-size: 12px; color: #0071DC;" class="d-flex justify-content-center pt-1">In 200+ people's carts</p>
+                </div>
+                <div class="d-flex">
+                    <div class="d-flex ms-3 gap-2" style="line-height: 0.5;">
+                        <img style="width: 80px; height: 80px;" src="../DT.webp" alt="">
+                        <div style="line-height: 0.5; color: #666666;">
+                            <p>LG 55" Class 4K UHD 2160P webOS Smart TV -</p>
+                            <p> 55UQ7070ZUE</p>
+                            <p style="font-size: 14px;">  $358.00/ea</p> 
+                            <div class="d-flex gap-2">
+                                <img style="width: 14px;" class="" src="./roundReturn.svg" alt="">
+                                <p class="mt-3" style="font-size: 14px;"> Free 30-day returns</p>
+                            </div>   
+                        </div>
+                    </div>
+                    <div class="" style="margin-left:165px;">
+                        <p  class="fw-bold">$358.00</p>
+                    </div>
+                </div>
+                <div class="d-flex mt-2" style="margin-left: 105px;">
+                    <i class="fa-solid fa-id-badge "></i>
+                    <div style="line-height: 0.5;" class="ms-3">
+                        <p style="color: #464772;font-size: 16px;">Add Walmart Protection Plan by Allstate</p>
+                        <a style="color: #000000; font-size: 14px;" href="">View details</a>
+                    </div>
+                </div>
+                <div style="margin-left: 125px;"  class="mt-3">
+                    <p style="font-size: 14px;">(Only one option can be selected at a time.)</p>
+                    <div>
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                            <label class="form-check-label" for="invalidCheck" style="font-size: 14px; color: #666666;">
+                                4-Year plan - $49.00
+                            </label>
+                            </div>
+                            <div class="form-check"  style="color:#000000 ;">
+                                <input class="form-check-input"  type="checkbox" value="" id="invalidCheck" required>
+                                <label class="form-check-label" for="invalidCheck" style="font-size: 14px; ">
+                                   <p style="color: #666666;"> 5-Year plan - $55.00</p>
+                                </label>
+                                </div>
+                                
+                    </div>
+                </div>
+                <div class="d-flex gap-2" style="margin-left: 110px;">
+                    <i style="font-size: 11px; " class="fa-solid fa-wrench   "></i>
+                    <div style="line-height: 0.5;">
+                        <p style="font-size: 14px;color: #464772;font-weight: 500;">Add Expert Help</p>
+                        <a style="font-size: 14px;color: #000000;" href="">View details</a>
+                    </div>
+                </div>
+                <div style="margin-left: 122px; margin-top: 10px;">
+                    <div class="form-check"  style="color:#000000 ;">
+                        <input class="form-check-input"  type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck" style="font-size: 14px; ">
+                           <p style="color: #2E2F32; font-weight: 400;"> Mounting Service (Mount not <br>
+                            Included) - $79.00</p>
+                        </label>
+                        </div>
+                </div>
+                <div class="d-flex justify-content-end gap-3 me-3">
+                    <a style="font-size: 14px; color: #000000; margin-top: 3px;" href="">Remove</a>
+                    <a style="font-size: 14px; color: #000000; margin-top: 3px;" href="">Save for later</a>
+                    <div class="d-flex" style="box-shadow: 1px 1px 4px #ddd; width: 100px; height: 30px;border-radius: 32px; display: flex; justify-content:space-between;">
+                        
+                     <a style="margin-top: 5px;" href=""><i class="fa-solid fa-minus ms-2 text-dark"></i></a>
+                       
+                     <span style="font-size: 14px; margin-top: 5px;">1</span>
+                        
+                     <a style="margin-top: 5px; font-size: 14px;" href=""><i class="fa-solid fa-plus me-2 text-dark"></i></a>
+                        
+                    </div>
+                </div>
+            </div>
+            <br>
+            <div style="box-shadow:0px 0px 1px #000000; width: 700PX; height: 380PX;border-radius: 12PX; background-color: #FFFFFF;">
+               <p style="padding-top: 25px; padding-left: 15px; font-size: 16px;font-weight: bold;">Recommended with your order</p>
+               <div class="d-flex gap-2 mt-3">
+                  <div class="ms-3">
+                    <img style="width: 110px;height: 80px;" src="./1st.webp" alt="">
+                    <div class="d-flex gap-1 " style="border: 1px solid #ddd;width: 70px;height: 30px; border-radius: 32px; background-color: #004F9A; border: none;">
+                        <i class="fa-solid fa-plus mt-1 ms-2 mt-2 text-white" style="font-size: 14px;"></i>
+                        <p class="text-white" style="margin-top: 3px; font-size: 14px;">Add</p>
+                    </div>
+                    <div class="mt-4">
+                      <a style="text-decoration: none;font-size: 16px;font-weight: bold;color: #000000;" href="">$5.88</a>
+                    </div>
+                    <div class="mt-3" style="line-height: 0.5; font-size: 14px;">
+                       <p>FanKiway Home</p>
+                      <p>Decor Christmas</p>
+                      <p>Doll Christmas</p>
+                    </div>
+                    <div style="box-shadow: 1px 1px 4px #ddd; width: 100px; height: 25px;border-radius: 6px; display: flex; justify-content:center;background-color: #E6F1FC;">
+                        <p class="mt-1" style="font-size: 11px; color: #004F9A;">3+ Day shipping</p>
+                    </div>
+                  </div>
+                  <div class="ms-3">
+                    <img style="width: 110px;height: 80px;" src="./2nd.webp" alt="">
+                    <div class="d-flex gap-1 " style="border: 1px solid #ddd;width: 70px;height: 30px; border-radius: 32px; background-color: #004F9A; border: none;">
+                        <i class="fa-solid fa-plus mt-1 ms-2 mt-2 text-white" style="font-size: 14px;"></i>
+                        <p class="text-white" style="margin-top: 3px; font-size: 14px;">Add</p>
+                    </div>
+                    <div class="mt-4">
+                      <a style="text-decoration: none;font-size: 16px;font-weight: bold;color: #000000;" href="">Now $3.59</a>
+                    </div>
+                    <div class="mt-3" style="line-height: 0.5; font-size: 14px;">
+                       <p>Giyblacko Easter</p>
+                      <p>Bunny Basket</p>
+                      <p>Doll Christmas</p>
+                    </div>
+                    <div style="box-shadow: 1px 1px 4px #ddd; width: 100px; height: 25px;border-radius: 6px; display: flex; justify-content:center;background-color: #E6F1FC;">
+                        <p class="mt-1" style="font-size: 11px; color: #004F9A;">1+ Day shipping</p>
+                    </div>
+                  </div>
+                  <div class="ms-3">
+                    <img style="width: 110px;height: 80px;" src="./3rd.webp" alt="">
+                    <div class="d-flex gap-1 " style="border: 1px solid #ddd;width: 70px;height: 30px; border-radius: 32px; background-color: #004F9A; border: none;">
+                        <i class="fa-solid fa-plus mt-1 ms-2 mt-2 text-white" style="font-size: 14px;"></i>
+                        <p class="text-white" style="margin-top: 3px; font-size: 14px;">Add</p>
+                    </div>
+                    <div class="mt-4">
+                      <a style="text-decoration: none;font-size: 16px;font-weight: bold;color: #000000;" href="">+$4.99 Shipping</a>
+                    </div>
+                    <div class="mt-3" style="line-height: 0.5; font-size: 14px;">
+                       <p>Hesxuno Easter</p>
+                      <p>Rudolf Down</p>
+                      <p>Coral Plush Doll...</p>
+                    </div>
+                    <div style="box-shadow: 1px 1px 4px #ddd; width: 100px; height: 25px;border-radius: 6px; display: flex; justify-content:center;background-color: #E6F1FC;">
+                        <p class="mt-1" style="font-size: 11px; color: #004F9A;">3+ Day shipping</p>
+                    </div>
+                  </div>
+                  <div class="ms-3">
+                    <img style="width: 110px;height: 80px;" src="./4th.webp" alt="">
+                    <div class="d-flex gap-1 " style="border: 1px solid #ddd;width: 70px;height: 30px; border-radius: 32px; background-color: #004F9A; border: none;">
+                        <i class="fa-solid fa-plus mt-1 ms-2 mt-2 text-white" style="font-size: 14px;"></i>
+                        <p class="text-white" style="margin-top: 3px; font-size: 14px;">Add</p>
+                    </div>
+                    <div class="mt-4">
+                      <a style="text-decoration: none;font-size: 16px;font-weight: bold;color: #000000;" href="">+$3.99 Shipping</a>
+                    </div>
+                    <div class="mt-3" style="line-height: 0.5; font-size: 14px;">
+                       <p>Easter Basket</p>
+                      <p>Decoration</p>
+                      <p>Rabbit Bow...</p>
+                    </div>
+                    <div style="box-shadow: 1px 1px 4px #ddd; width: 100px; height: 25px;border-radius: 6px; display: flex; justify-content:center;background-color: #E6F1FC;">
+                        <p class="mt-1" style="font-size: 11px; color: #004F9A;">2+ Day shipping</p>
+                    </div>
+                  </div>
+                  <div class="ms-3">
+                    <img style="width: 110px;height: 80px;" src="./5th.webp" alt="">
+                    <div class="d-flex gap-1 " style="border: 1px solid #ddd;width: 70px;height: 30px; border-radius: 32px; background-color: #004F9A; border: none;">
+                        <i class="fa-solid fa-plus mt-1 ms-2 mt-2 text-white" style="font-size: 14px;"></i>
+                        <p class="text-white" style="margin-top: 3px; font-size: 14px;">Add</p>
+                    </div>
+                    <div class="mt-4">
+                      <a style="text-decoration: none;font-size: 16px;font-weight: bold;color: #000000;" href="">$7.45</a>
+                    </div>
+                    <div class="mt-3" style="line-height: 0.5; font-size: 14px;">
+                       <p>FanKiway Home</p>
+                      <p>Decor Christmas</p>
+                      <p>Doll Christmas</p>
+                    </div>
+                    <div style="box-shadow: 1px 1px 4px #ddd; width: 100px; height: 25px;border-radius: 6px; display: flex; justify-content:center;background-color: #E6F1FC;">
+                        <p class="mt-1" style="font-size: 11px; color: #004F9A;">3+ Day shipping</p>
+                    </div>
+                  </div>
+               </div>
+            </div>
+            <!--  -->
+        </div>
+        </div>
+        <div class="col-md-4">
+            <div >
+                <div class="pt-4" style="margin-left: 45px;margin-top: 85px; box-shadow: 0px 0px 4px #ddd; width: 400px; height: 380px;border-radius: 6px; ">
+                    <div style=" border: 1px solid #ddd; width: 320px;height: 40px; margin-left: 40px;border-radius: 32px; padding-top: 8px; background-color: #0071DC;" >
+                        <p style="margin-left: 80px; color: #FFFFFF;">Continue to checkout</p>
+                    </div>
+                      <div style="border-bottom: 1px solid #ddd;">
+                        <div class="d-flex mt-3" style="margin-left: 61px; ">
+                            <p style="font-size: 14px;color: #666666;">For the best shopping experience, </p>
+                            <a style="font-size: 14px;color: #666666;" href=""> sign in</a>
+                           </div>
+                      </div>
+                        <div>
+                            <div style="line-height: 0.1;">
+                            <div class="d-flex justify-content-between mt-3">
+                                <p class="ms-3 fw-bold"  style="font-size: 14px;">Subtotal <span style="font-size: 14px;font-weight: 400;">(1 item)</span></p>
+                                 <span class="me-3" style="font-size: 14px ;color: #666666;">$358.00</span>   
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <p class="ms-3 "  style="font-size: 14px; color: #666666;">Shipping </p>
+                                 <span class="me-3" style="font-size: 14px ;color: #73B059;">Free</span>   
+                            </div>
+                        </div>
+                            <div style="border-bottom: 1px solid #ddd;">
+                                <div class="d-flex justify-content-between mt-3">
+                                    <p class="ms-3 "  style="font-size: 14px; color: #666666;">Taxes </p>
+                                     <span class="me-3" style="font-size: 14px ;color: #666666;">Calculated at checkout</span>   
+                                </div>
+                            </div>
+                            <div class="d-flex justify-content-between mt-3">
+                                <p class="ms-3 fw-bold"  style="font-size: 14px; color: #000000;">Estimated total </p>
+                                 <span class="me-3 fw-bold" style="font-size: 16px ;color: #000000;">$358.00</span>   
+                            </div>
+                              <div class="d-flex justify-content-end me-3" style="">
+                                <p class="" style="margin-top: 8px; font-size: 14px;">pay $24/mo with </p>
+                                <img style="width: 30px;height: 25px;" src="./right.avif" alt="">
+                              </div>
+                              <div class="d-flex justify-content-end">
+                                <a class="me-3" style="font-size: 14px;" href="">Learn How</a>
+                              </div>
+                        </div>
+                </div>
+                <div  style="margin-left: 45px;margin-top: 25px; box-shadow: 0px 0px 4px #ddd; width: 400px; height: 125px;border-radius: 6px; ">
+                   <div>
+                    <div class="d-flex">
+                        <img style="width: 45px; height: 25px;margin-top: 25px;" class="ms-3" src="./skip.svg" alt="">
+                        <div style="font-size: 14px; margin-top: 18px; line-height: 0.5; color: #0071DC; font-weight: 600;" class="ms-2">
+                            <p>Become a member to get free same-day </p>
+                            <p>delivery, gas discounts & more!</p>
+                        </div>
+                    </div>
+                    <div class="form-check ms-3">
+                        <input class="form-check-input" type="checkbox" value="" id="invalidCheck" required>
+                        <label class="form-check-label" for="invalidCheck" style="font-size: 14px; color: #666666;">
+                           <p style="font-size: 13px;">New members get a free 30-day trial</p>
+                        </label>
+                        </div>
+                   </div>
+                </div>
+                <div style="margin-left: 45px;margin-top: 25px; box-shadow: 0px 0px 4px #ddd; width: 400px; height: 100px;border-radius: 6px;">
+                  <div class="d-flex justify-content-between">
+                    <div class="mt-4">
+                        <img class="ms-3" style="width: 65px;height: 45px;" src="./cash.webp" alt="">
+                    </div>
+                    <div style="font-size: 14px;" class="mt-3">
+                        <p class="" style=""><span style="color: #000000;">Earn 5% cash back</span>                          on Walmart.com <br>
+                            See if you’re pre-approved with no <br>
+                            credit risk.       
+                          <a href="">Learn How</a></p>
+                    </div>
+                    <div class="me-5 mt-3">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                  </div>
+                </div>
+            </div>
+        </div>
+       </div>
+   </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+
+</body>
+</html>
